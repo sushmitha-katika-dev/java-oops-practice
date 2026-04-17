@@ -1,48 +1,5 @@
-/*
-🏦 Banking Application - Overview
-
-This application simulates how a real banking system processes transactions.
-
-👉 What it is:
-A simple system that connects:
-
-* Account (Savings / Current)
-* Payment method (UPI / Card)
-* Service layer (BankService)
-
-👉 How it works:
-
-1. User selects account type and payment method
-2. Payment module validates the transaction
-3. BankService coordinates the process
-4. Account withdraws the amount if payment is successful
-5. Updated balance is displayed
-
-👉 Where it is used in real life:
-This design is used in applications like:
-
-* Google Pay
-* PhonePe
-* Paytm
-* Online banking systems
-
-👉 Key Concepts Used:
-
-* Encapsulation → protects account data
-* Abstraction → defines account behavior
-* Interface → supports multiple payment methods
-* Polymorphism → allows dynamic selection at runtime
-* Loose Coupling → independent modules working together
-
-👉 Summary:
-BankService acts as the central controller that connects account and payment modules
-to complete a transaction in a flexible and scalable way.
-*/
-
-
 package com.sushi.bank;
 
-import javax.smartcardio.Card;
 import java.util.Scanner;
 
 public class Main {
